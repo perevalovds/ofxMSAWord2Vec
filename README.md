@@ -11,6 +11,9 @@ See bottom of README for more info and tutorials on word2vec.
 ## Usage
 Download the pretrained models from the [releases tab](https://github.com/memo/ofxMSAWord2Vec/releases). More info on these below (For easiest / best results I recommend GoogleNews_xxxxxx_lowercase.bin).
 
+Put the models into example/bin/vec folder and run the example.
+
+
 ### openFrameworks
 	msa::Word2Vec word2vec;
 	// load binary file (as opposed to csv, which is much slower to load)

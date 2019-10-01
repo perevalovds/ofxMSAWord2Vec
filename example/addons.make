@@ -1,0 +1,2 @@
+ofxMSAVectorUtils
+ofxMSAWord2Vec

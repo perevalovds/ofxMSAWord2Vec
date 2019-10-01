@@ -42,6 +42,11 @@ public:
         dir.listDir("vec");
         model_files = dir.getFiles();
 
+		//NOTE!
+		//Put in "vec" folder the pretrained models from the (https://github.com/memo/ofxMSAWord2Vec/releases). 
+		//See more info in README.md of ofxMSAWord2Vec addon.
+		//	Start with GoogleNews_xxxxxx_lowercase.bin.
+
         load_model(model_files[0]);
     }
 
