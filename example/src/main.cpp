@@ -45,8 +45,12 @@ public:
 		//NOTE!
 		//Put in "vec" folder the pretrained models from the (https://github.com/memo/ofxMSAWord2Vec/releases). 
 		//See more info in README.md of ofxMSAWord2Vec addon.
-		//	Start with GoogleNews_xxxxxx_lowercase.bin.
+		//It's recommended to start with GoogleNews_xxxxxx_lowercase.bin.
 
+		if (model_files.empty()) {
+			ofSystemAlertDialog("Please put models to bin/data/vec folder, from https://github.com/memo/ofxMSAWord2Vec/releases");
+			OF_EXIT_APP(0);
+		}
         load_model(model_files[0]);
     }
 
